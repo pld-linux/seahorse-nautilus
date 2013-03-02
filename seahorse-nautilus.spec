@@ -10,6 +10,7 @@ URL:		https://live.gnome.org/Seahorse
 BuildRequires:	dbus-glib-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	gcr-devel
+BuildRequires:	gettext-devel
 BuildRequires:	gnupg2
 BuildRequires:	gpgme-devel >= 1.0
 BuildRequires:	gtk+3-devel
@@ -18,6 +19,7 @@ BuildRequires:	libcryptui-devel
 BuildRequires:	libgnome-keyring-devel
 BuildRequires:	libnotify-devel
 BuildRequires:	nautilus-devel
+BuildRequires:	pkgconfig
 Requires:	glib2 >= 1:2.26.0
 Obsoletes:	seahorse-plugins < 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
