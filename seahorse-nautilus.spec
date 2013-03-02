@@ -1,4 +1,5 @@
 Summary:	PGP encryption and signing for Nautilus
+Summary(pl.UTF-8):	Rozszerzenie Seahorse dla Nautilusa
 Name:		seahorse-nautilus
 Version:	3.6.1
 Release:	1
@@ -21,12 +22,16 @@ BuildRequires:	libnotify-devel
 BuildRequires:	nautilus-devel
 BuildRequires:	pkgconfig
 Requires:	glib2 >= 1:2.26.0
-Obsoletes:	seahorse-plugins < 3.0
+Requires:	nautilus >= 3.0
+Obsoletes:	nautilus-extension-seahorse < 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Seahorse nautilus is an extension for nautilus which allows encryption
 and decryption of OpenPGP files using GnuPG.
+
+%description -l pl.UTF-8
+Rozszerzenie do podpisywania i szyfrowania plików.
 
 %prep
 %setup -q
