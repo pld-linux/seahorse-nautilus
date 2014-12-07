@@ -2,7 +2,7 @@ Summary:	PGP encryption and signing for Nautilus
 Summary(pl.UTF-8):	Rozszerzenie Seahorse dla Nautilusa
 Name:		seahorse-nautilus
 Version:	3.6.1
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/seahorse-nautilus/3.6/%{name}-%{version}.tar.xz
