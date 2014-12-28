@@ -11,7 +11,7 @@ URL:		https://live.gnome.org/Seahorse
 BuildRequires:	dbus-glib-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	gcr-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnupg2
 BuildRequires:	gpgme-devel >= 1.0
 BuildRequires:	gtk+3-devel
