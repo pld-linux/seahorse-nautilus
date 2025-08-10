@@ -5,7 +5,7 @@ Version:	3.10.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/seahorse-nautilus/3.10/%{name}-%{version}.tar.xz
+Source0:	https://download.gnome.org/sources/seahorse-nautilus/3.10/%{name}-%{version}.tar.xz
 # Source0-md5:	1f33cf9f56ac46b2a2363d022ea7969f
 URL:		https://wiki.gnome.org/Apps/Seahorse
 BuildRequires:	dbus-glib-devel >= 0.35
