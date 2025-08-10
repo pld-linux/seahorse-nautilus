@@ -2,12 +2,15 @@ Summary:	PGP encryption and signing for Nautilus
 Summary(pl.UTF-8):	Rozszerzenie Seahorse dla Nautilusa
 Name:		seahorse-nautilus
 Version:	3.10.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.gnome.org/sources/seahorse-nautilus/3.10/%{name}-%{version}.tar.xz
 # Source0-md5:	1f33cf9f56ac46b2a2363d022ea7969f
+Patch0:		%{name}-gpgme2.patch
 URL:		https://wiki.gnome.org/Apps/Seahorse
+BuildRequires:	autoconf >= 2.63
+BuildRequires:	automake >= 1:1.11
 BuildRequires:	dbus-glib-devel >= 0.35
 BuildRequires:	desktop-file-utils
 BuildRequires:	gcr-devel >= 3.4.1
@@ -20,6 +23,7 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libcryptui-devel >= 3.10
 BuildRequires:	libgnome-keyring-devel
 BuildRequires:	libnotify-devel >= 0.3
+BuildRequires:	libtool
 BuildRequires:	nautilus3-devel >= 3.0
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
@@ -44,8 +48,14 @@ Rozszerzenie do podpisywania i szyfrowania plików.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
+%{__libtoolize}
+%{__aclocal} -I m4
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure \
 	--disable-gpg-check \
 	--disable-silent-rules
