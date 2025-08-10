@@ -20,7 +20,7 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libcryptui-devel >= 3.10
 BuildRequires:	libgnome-keyring-devel
 BuildRequires:	libnotify-devel >= 0.3
-BuildRequires:	nautilus-devel >= 3.0
+BuildRequires:	nautilus3-devel >= 3.0
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -31,7 +31,7 @@ Requires:	gpgme >= 1.0.0
 Requires:	gnupg2 >= 2.0
 Requires:	libcryptui >= 3.10
 Requires:	libnotify >= 0.3
-Requires:	nautilus >= 3.0
+Requires:	nautilus3 >= 3.0
 Obsoletes:	nautilus-extension-seahorse < 3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
